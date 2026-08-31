@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="denoiser_top.wdb" id="1">
+         <top_modules>
+            <top_module name="apa_denoiser_top_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="HLS Process Summary Group">
+      <obj_property name="label">HLS Process Summary</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top//AESL_inst_denoiser_top_activity">
+         <obj_property name="label">AESL_inst_denoiser_top_activity</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="UseFullPath">true</obj_property>
+         <obj_property name="ElementShortName">AESL_inst_denoiser_top_activity</obj_property>
+         <obj_property name="ObjectShortName">AESL_inst_denoiser_top_activity</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">turquoise</obj_property>
+         <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+         <obj_property name="Render_Data">/apatb_denoiser_top_top/AESL_inst_denoiser_top//AESL_inst_denoiser_top_activity.dataflowTxWaveData.Cycles</obj_property>
+         <obj_property name="Value_Data">/apatb_denoiser_top_top/AESL_inst_denoiser_top//AESL_inst_denoiser_top_activity.dataflowTxWaveData.OutStanding</obj_property>
+         <obj_property name="Detail_Data">/apatb_denoiser_top_top/AESL_inst_denoiser_top//AESL_inst_denoiser_top_activity.dataflowTxTooltipData</obj_property>
+         <wvobject type="group" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_denoiser_top_Pipeline_VITIS_LOOP_18_1_fu_123/grp_denoiser_top_Pipeline_VITIS_LOOP_18_1_fu_123_activity">
+            <obj_property name="label">grp_denoiser_top_Pipeline_VITIS_LOOP_18_1_fu_123_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_denoiser_top_Pipeline_VITIS_LOOP_18_1_fu_123_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_denoiser_top_Pipeline_VITIS_LOOP_18_1_fu_123_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_denoiser_top_Pipeline_VITIS_LOOP_18_1_fu_123/grp_denoiser_top_Pipeline_VITIS_LOOP_18_1_fu_123_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_denoiser_top_Pipeline_VITIS_LOOP_18_1_fu_123/grp_denoiser_top_Pipeline_VITIS_LOOP_18_1_fu_123_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_denoiser_top_Pipeline_VITIS_LOOP_18_1_fu_123/grp_denoiser_top_Pipeline_VITIS_LOOP_18_1_fu_123_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_fu_131_activity">
+            <obj_property name="label">grp_inference_fu_131_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_inference_fu_131_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_inference_fu_131_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_fu_131_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_fu_131_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_fu_131_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_VITIS_LOOP_47_3_fu_475/grp_inference_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_VITIS_LOOP_47_3_fu_475_activity">
+               <obj_property name="label">grp_inference_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_VITIS_LOOP_47_3_fu_475_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_inference_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_VITIS_LOOP_47_3_fu_475_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_inference_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_VITIS_LOOP_47_3_fu_475_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_VITIS_LOOP_47_3_fu_475/grp_inference_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_VITIS_LOOP_47_3_fu_475_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_VITIS_LOOP_47_3_fu_475/grp_inference_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_VITIS_LOOP_47_3_fu_475_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_VITIS_LOOP_47_3_fu_475/grp_inference_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_VITIS_LOOP_47_3_fu_475_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kw_1_fu_481/grp_inference_Pipeline_loop_kw_1_fu_481_activity">
+               <obj_property name="label">grp_inference_Pipeline_loop_kw_1_fu_481_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_inference_Pipeline_loop_kw_1_fu_481_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_inference_Pipeline_loop_kw_1_fu_481_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kw_1_fu_481/grp_inference_Pipeline_loop_kw_1_fu_481_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kw_1_fu_481/grp_inference_Pipeline_loop_kw_1_fu_481_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kw_1_fu_481/grp_inference_Pipeline_loop_kw_1_fu_481_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_VITIS_LOOP_97_1_VITIS_LOOP_98_2_VITIS_LOOP_99_3_fu_498/grp_inference_Pipeline_VITIS_LOOP_97_1_VITIS_LOOP_98_2_VITIS_LOOP_99_3_fu_498_activity">
+               <obj_property name="label">grp_inference_Pipeline_VITIS_LOOP_97_1_VITIS_LOOP_98_2_VITIS_LOOP_99_3_fu_498_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_inference_Pipeline_VITIS_LOOP_97_1_VITIS_LOOP_98_2_VITIS_LOOP_99_3_fu_498_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_inference_Pipeline_VITIS_LOOP_97_1_VITIS_LOOP_98_2_VITIS_LOOP_99_3_fu_498_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_VITIS_LOOP_97_1_VITIS_LOOP_98_2_VITIS_LOOP_99_3_fu_498/grp_inference_Pipeline_VITIS_LOOP_97_1_VITIS_LOOP_98_2_VITIS_LOOP_99_3_fu_498_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_VITIS_LOOP_97_1_VITIS_LOOP_98_2_VITIS_LOOP_99_3_fu_498/grp_inference_Pipeline_VITIS_LOOP_97_1_VITIS_LOOP_98_2_VITIS_LOOP_99_3_fu_498_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_VITIS_LOOP_97_1_VITIS_LOOP_98_2_VITIS_LOOP_99_3_fu_498/grp_inference_Pipeline_VITIS_LOOP_97_1_VITIS_LOOP_98_2_VITIS_LOOP_99_3_fu_498_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kh_2_loop_kw_2_loop_ic_2_fu_504/grp_inference_Pipeline_loop_kh_2_loop_kw_2_loop_ic_2_fu_504_activity">
+               <obj_property name="label">grp_inference_Pipeline_loop_kh_2_loop_kw_2_loop_ic_2_fu_504_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_inference_Pipeline_loop_kh_2_loop_kw_2_loop_ic_2_fu_504_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_inference_Pipeline_loop_kh_2_loop_kw_2_loop_ic_2_fu_504_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kh_2_loop_kw_2_loop_ic_2_fu_504/grp_inference_Pipeline_loop_kh_2_loop_kw_2_loop_ic_2_fu_504_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kh_2_loop_kw_2_loop_ic_2_fu_504/grp_inference_Pipeline_loop_kh_2_loop_kw_2_loop_ic_2_fu_504_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kh_2_loop_kw_2_loop_ic_2_fu_504/grp_inference_Pipeline_loop_kh_2_loop_kw_2_loop_ic_2_fu_504_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kh_3_loop_kw_3_loop_ic_3_fu_521/grp_inference_Pipeline_loop_kh_3_loop_kw_3_loop_ic_3_fu_521_activity">
+               <obj_property name="label">grp_inference_Pipeline_loop_kh_3_loop_kw_3_loop_ic_3_fu_521_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_inference_Pipeline_loop_kh_3_loop_kw_3_loop_ic_3_fu_521_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_inference_Pipeline_loop_kh_3_loop_kw_3_loop_ic_3_fu_521_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kh_3_loop_kw_3_loop_ic_3_fu_521/grp_inference_Pipeline_loop_kh_3_loop_kw_3_loop_ic_3_fu_521_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kh_3_loop_kw_3_loop_ic_3_fu_521/grp_inference_Pipeline_loop_kh_3_loop_kw_3_loop_ic_3_fu_521_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kh_3_loop_kw_3_loop_ic_3_fu_521/grp_inference_Pipeline_loop_kh_3_loop_kw_3_loop_ic_3_fu_521_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kh_out_loop_kw_out_loop_ic_out_fu_537/grp_inference_Pipeline_loop_kh_out_loop_kw_out_loop_ic_out_fu_537_activity">
+               <obj_property name="label">grp_inference_Pipeline_loop_kh_out_loop_kw_out_loop_ic_out_fu_537_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_inference_Pipeline_loop_kh_out_loop_kw_out_loop_ic_out_fu_537_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_inference_Pipeline_loop_kh_out_loop_kw_out_loop_ic_out_fu_537_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kh_out_loop_kw_out_loop_ic_out_fu_537/grp_inference_Pipeline_loop_kh_out_loop_kw_out_loop_ic_out_fu_537_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kh_out_loop_kw_out_loop_ic_out_fu_537/grp_inference_Pipeline_loop_kh_out_loop_kw_out_loop_ic_out_fu_537_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kh_out_loop_kw_out_loop_ic_out_fu_537/grp_inference_Pipeline_loop_kh_out_loop_kw_out_loop_ic_out_fu_537_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_denoiser_top_Pipeline_VITIS_LOOP_25_2_fu_152/grp_denoiser_top_Pipeline_VITIS_LOOP_25_2_fu_152_activity">
+            <obj_property name="label">grp_denoiser_top_Pipeline_VITIS_LOOP_25_2_fu_152_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_denoiser_top_Pipeline_VITIS_LOOP_25_2_fu_152_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_denoiser_top_Pipeline_VITIS_LOOP_25_2_fu_152_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_denoiser_top_Pipeline_VITIS_LOOP_25_2_fu_152/grp_denoiser_top_Pipeline_VITIS_LOOP_25_2_fu_152_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_denoiser_top_Pipeline_VITIS_LOOP_25_2_fu_152/grp_denoiser_top_Pipeline_VITIS_LOOP_25_2_fu_152_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_denoiser_top_Pipeline_VITIS_LOOP_25_2_fu_152/grp_denoiser_top_Pipeline_VITIS_LOOP_25_2_fu_152_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="protoinst" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top//AESL_inst_denoiser_top_activity">
+      <obj_property name="ElementShortName">AESL_inst_denoiser_top_activity</obj_property>
+      <obj_property name="ObjectShortName">AESL_inst_denoiser_top_activity</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="AESL_inst_denoiser_top_group">
+      <obj_property name="label">AESL_inst_denoiser_top</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_denoiser_top_Pipeline_VITIS_LOOP_18_1_fu_123/grp_denoiser_top_Pipeline_VITIS_LOOP_18_1_fu_123_activity">
+         <obj_property name="ElementShortName">grp_denoiser_top_Pipeline_VITIS_LOOP_18_1_fu_123_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_denoiser_top_Pipeline_VITIS_LOOP_18_1_fu_123_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_fu_131_activity">
+         <obj_property name="ElementShortName">grp_inference_fu_131_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_inference_fu_131_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_denoiser_top_Pipeline_VITIS_LOOP_25_2_fu_152/grp_denoiser_top_Pipeline_VITIS_LOOP_25_2_fu_152_activity">
+         <obj_property name="ElementShortName">grp_denoiser_top_Pipeline_VITIS_LOOP_25_2_fu_152_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_denoiser_top_Pipeline_VITIS_LOOP_25_2_fu_152_activity</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="AESL_inst_denoiser_top_Handshake_group">
+         <obj_property name="label">Block-level handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/ap_start">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/ap_ready">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/ap_done">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_denoiser_top_Pipeline_VITIS_LOOP_18_1_fu_123_group">
+         <obj_property name="label">grp_denoiser_top_Pipeline_VITIS_LOOP_18_1_fu_123</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="grp_denoiser_top_Pipeline_VITIS_LOOP_18_1_fu_123_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_denoiser_top_Pipeline_VITIS_LOOP_18_1_fu_123/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_denoiser_top_Pipeline_VITIS_LOOP_18_1_fu_123/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_denoiser_top_Pipeline_VITIS_LOOP_18_1_fu_123/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_inference_fu_131_group">
+         <obj_property name="label">grp_inference_fu_131</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_VITIS_LOOP_47_3_fu_475/grp_inference_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_VITIS_LOOP_47_3_fu_475_activity">
+            <obj_property name="ElementShortName">grp_inference_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_VITIS_LOOP_47_3_fu_475_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_inference_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_VITIS_LOOP_47_3_fu_475_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kw_1_fu_481/grp_inference_Pipeline_loop_kw_1_fu_481_activity">
+            <obj_property name="ElementShortName">grp_inference_Pipeline_loop_kw_1_fu_481_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_inference_Pipeline_loop_kw_1_fu_481_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_VITIS_LOOP_97_1_VITIS_LOOP_98_2_VITIS_LOOP_99_3_fu_498/grp_inference_Pipeline_VITIS_LOOP_97_1_VITIS_LOOP_98_2_VITIS_LOOP_99_3_fu_498_activity">
+            <obj_property name="ElementShortName">grp_inference_Pipeline_VITIS_LOOP_97_1_VITIS_LOOP_98_2_VITIS_LOOP_99_3_fu_498_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_inference_Pipeline_VITIS_LOOP_97_1_VITIS_LOOP_98_2_VITIS_LOOP_99_3_fu_498_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kh_2_loop_kw_2_loop_ic_2_fu_504/grp_inference_Pipeline_loop_kh_2_loop_kw_2_loop_ic_2_fu_504_activity">
+            <obj_property name="ElementShortName">grp_inference_Pipeline_loop_kh_2_loop_kw_2_loop_ic_2_fu_504_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_inference_Pipeline_loop_kh_2_loop_kw_2_loop_ic_2_fu_504_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kh_3_loop_kw_3_loop_ic_3_fu_521/grp_inference_Pipeline_loop_kh_3_loop_kw_3_loop_ic_3_fu_521_activity">
+            <obj_property name="ElementShortName">grp_inference_Pipeline_loop_kh_3_loop_kw_3_loop_ic_3_fu_521_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_inference_Pipeline_loop_kh_3_loop_kw_3_loop_ic_3_fu_521_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kh_out_loop_kw_out_loop_ic_out_fu_537/grp_inference_Pipeline_loop_kh_out_loop_kw_out_loop_ic_out_fu_537_activity">
+            <obj_property name="ElementShortName">grp_inference_Pipeline_loop_kh_out_loop_kw_out_loop_ic_out_fu_537_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_inference_Pipeline_loop_kh_out_loop_kw_out_loop_ic_out_fu_537_activity</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_inference_fu_131_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_inference_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_VITIS_LOOP_47_3_fu_475_group">
+            <obj_property name="label">grp_inference_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_VITIS_LOOP_47_3_fu_475</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_inference_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_VITIS_LOOP_47_3_fu_475_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_VITIS_LOOP_47_3_fu_475/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_VITIS_LOOP_47_3_fu_475/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_VITIS_LOOP_47_3_fu_475/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_inference_Pipeline_loop_kw_1_fu_481_group">
+            <obj_property name="label">grp_inference_Pipeline_loop_kw_1_fu_481</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_inference_Pipeline_loop_kw_1_fu_481_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kw_1_fu_481/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kw_1_fu_481/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kw_1_fu_481/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_inference_Pipeline_VITIS_LOOP_97_1_VITIS_LOOP_98_2_VITIS_LOOP_99_3_fu_498_group">
+            <obj_property name="label">grp_inference_Pipeline_VITIS_LOOP_97_1_VITIS_LOOP_98_2_VITIS_LOOP_99_3_fu_498</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_inference_Pipeline_VITIS_LOOP_97_1_VITIS_LOOP_98_2_VITIS_LOOP_99_3_fu_498_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_VITIS_LOOP_97_1_VITIS_LOOP_98_2_VITIS_LOOP_99_3_fu_498/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_VITIS_LOOP_97_1_VITIS_LOOP_98_2_VITIS_LOOP_99_3_fu_498/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_VITIS_LOOP_97_1_VITIS_LOOP_98_2_VITIS_LOOP_99_3_fu_498/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_inference_Pipeline_loop_kh_2_loop_kw_2_loop_ic_2_fu_504_group">
+            <obj_property name="label">grp_inference_Pipeline_loop_kh_2_loop_kw_2_loop_ic_2_fu_504</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_inference_Pipeline_loop_kh_2_loop_kw_2_loop_ic_2_fu_504_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kh_2_loop_kw_2_loop_ic_2_fu_504/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kh_2_loop_kw_2_loop_ic_2_fu_504/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kh_2_loop_kw_2_loop_ic_2_fu_504/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_inference_Pipeline_loop_kh_3_loop_kw_3_loop_ic_3_fu_521_group">
+            <obj_property name="label">grp_inference_Pipeline_loop_kh_3_loop_kw_3_loop_ic_3_fu_521</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_inference_Pipeline_loop_kh_3_loop_kw_3_loop_ic_3_fu_521_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kh_3_loop_kw_3_loop_ic_3_fu_521/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kh_3_loop_kw_3_loop_ic_3_fu_521/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kh_3_loop_kw_3_loop_ic_3_fu_521/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_inference_Pipeline_loop_kh_out_loop_kw_out_loop_ic_out_fu_537_group">
+            <obj_property name="label">grp_inference_Pipeline_loop_kh_out_loop_kw_out_loop_ic_out_fu_537</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_inference_Pipeline_loop_kh_out_loop_kw_out_loop_ic_out_fu_537_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kh_out_loop_kw_out_loop_ic_out_fu_537/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kh_out_loop_kw_out_loop_ic_out_fu_537/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kh_out_loop_kw_out_loop_ic_out_fu_537/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_denoiser_top_Pipeline_VITIS_LOOP_25_2_fu_152_group">
+         <obj_property name="label">grp_denoiser_top_Pipeline_VITIS_LOOP_25_2_fu_152</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="grp_denoiser_top_Pipeline_VITIS_LOOP_25_2_fu_152_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_denoiser_top_Pipeline_VITIS_LOOP_25_2_fu_152/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_denoiser_top_Pipeline_VITIS_LOOP_25_2_fu_152/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_denoiser_top_Pipeline_VITIS_LOOP_25_2_fu_152/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

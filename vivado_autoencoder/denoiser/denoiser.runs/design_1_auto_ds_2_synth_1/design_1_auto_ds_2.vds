@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Jun 25 13:59:27 2026
+# Process ID: 13172
+# Current directory: C:/Nam_3_HK2_2025_2026/Do_an_1/autoencoder/denoiser/denoiser.runs/design_1_auto_ds_2_synth_1
+# Command line: vivado.exe -log design_1_auto_ds_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_auto_ds_2.tcl
+# Log file: C:/Nam_3_HK2_2025_2026/Do_an_1/autoencoder/denoiser/denoiser.runs/design_1_auto_ds_2_synth_1/design_1_auto_ds_2.vds
+# Journal file: C:/Nam_3_HK2_2025_2026/Do_an_1/autoencoder/denoiser/denoiser.runs/design_1_auto_ds_2_synth_1\vivado.jou
+# Running On: MSI, OS: Windows, CPU Frequency: 2296 MHz, CPU Physical cores: 12, Host memory: 7928 MB
+#-----------------------------------------------------------
+source design_1_auto_ds_2.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 398.703 ; gain = 75.039
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Nam_3_HK2_2025_2026/Do_an_1/c_inter_to_hls/denoiser/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_auto_ds_2
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 6ca3d91ef1b9c239 to dir: C:/Nam_3_HK2_2025_2026/Do_an_1/autoencoder/denoiser/denoiser.runs/design_1_auto_ds_2_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Nam_3_HK2_2025_2026/Do_an_1/autoencoder/denoiser/denoiser.cache/ip/2022.2/6/c/6ca3d91ef1b9c239/design_1_auto_ds_1.dcp to C:/Nam_3_HK2_2025_2026/Do_an_1/autoencoder/denoiser/denoiser.runs/design_1_auto_ds_2_synth_1/design_1_auto_ds_2.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Nam_3_HK2_2025_2026/Do_an_1/autoencoder/denoiser/denoiser.cache/ip/2022.2/6/c/6ca3d91ef1b9c239/design_1_auto_ds_1_sim_netlist.v to C:/Nam_3_HK2_2025_2026/Do_an_1/autoencoder/denoiser/denoiser.runs/design_1_auto_ds_2_synth_1/design_1_auto_ds_2_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Nam_3_HK2_2025_2026/Do_an_1/autoencoder/denoiser/denoiser.cache/ip/2022.2/6/c/6ca3d91ef1b9c239/design_1_auto_ds_1_sim_netlist.vhdl to C:/Nam_3_HK2_2025_2026/Do_an_1/autoencoder/denoiser/denoiser.runs/design_1_auto_ds_2_synth_1/design_1_auto_ds_2_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Nam_3_HK2_2025_2026/Do_an_1/autoencoder/denoiser/denoiser.cache/ip/2022.2/6/c/6ca3d91ef1b9c239/design_1_auto_ds_1_stub.v to C:/Nam_3_HK2_2025_2026/Do_an_1/autoencoder/denoiser/denoiser.runs/design_1_auto_ds_2_synth_1/design_1_auto_ds_2_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Nam_3_HK2_2025_2026/Do_an_1/autoencoder/denoiser/denoiser.cache/ip/2022.2/6/c/6ca3d91ef1b9c239/design_1_auto_ds_1_stub.vhdl to C:/Nam_3_HK2_2025_2026/Do_an_1/autoencoder/denoiser/denoiser.runs/design_1_auto_ds_2_synth_1/design_1_auto_ds_2_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_auto_ds_2, cache-ID = 6ca3d91ef1b9c239.
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 25 13:59:41 2026...

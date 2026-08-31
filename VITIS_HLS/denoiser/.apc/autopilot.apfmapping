@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="top.cpp" path="C:\Nam_3_HK2_2025_2026\Do_an_1\denoiser_c_to_hls\top.cpp"/>
+    <originFiles name="denoiser.h" path="C:\Nam_3_HK2_2025_2026\Do_an_1\denoiser_c_to_hls\denoiser.h"/>
+    <originFiles name="denoiser.cpp" path="C:\Nam_3_HK2_2025_2026\Do_an_1\denoiser_c_to_hls\denoiser.cpp"/>
+    <originFiles name="conv_out_weights.h" path="C:\Nam_3_HK2_2025_2026\Do_an_1\denoiser_c_to_hls\conv_out_weights.h"/>
+    <originFiles name="conv3_weights.h" path="C:\Nam_3_HK2_2025_2026\Do_an_1\denoiser_c_to_hls\conv3_weights.h"/>
+    <originFiles name="conv2_weights.h" path="C:\Nam_3_HK2_2025_2026\Do_an_1\denoiser_c_to_hls\conv2_weights.h"/>
+    <originFiles name="conv1_weights.h" path="C:\Nam_3_HK2_2025_2026\Do_an_1\denoiser_c_to_hls\conv1_weights.h"/>
+  </source>
+  <testbench>
+    <originFiles name="hls_test_data" path="C:\Nam_3_HK2_2025_2026\Do_an_1\hls_test_data"/>
+    <originFiles name="main.cpp" path="C:\Nam_3_HK2_2025_2026\Do_an_1\denoiser_c_to_hls\main.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,2 @@
+# Ignore large Vitis/Vivado simulation database files
+*.wdb

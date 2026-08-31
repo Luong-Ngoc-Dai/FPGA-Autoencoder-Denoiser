@@ -1,0 +1,50 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "denoiser_top",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "C:\/Nam_3_HK2_2025_2026\/Do_an_1\/c_inter_to_hls\/denoiser\/solution1\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "denoiser_top"
+              }]
+          }
+        },
+        {
+          "functionName": "denoiser_top",
+          "label": "",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "C:\/Nam_3_HK2_2025_2026\/Do_an_1\/c_inter_to_hls\/denoiser\/solution1\/csynth.tcl",
+          "sourceLine": "22",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "denoiser_top"
+              }]
+          }
+        },
+        {
+          "functionName": "denoiser_top",
+          "label": "",
+          "functionLabel": "",
+          "id": "3",
+          "sourceFile": "C:\/Nam_3_HK2_2025_2026\/Do_an_1\/c_inter_to_hls\/denoiser\/solution1\/csynth.tcl",
+          "sourceLine": "22",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "denoiser_top"
+              }]
+          }
+        }
+      ]
+    }]}

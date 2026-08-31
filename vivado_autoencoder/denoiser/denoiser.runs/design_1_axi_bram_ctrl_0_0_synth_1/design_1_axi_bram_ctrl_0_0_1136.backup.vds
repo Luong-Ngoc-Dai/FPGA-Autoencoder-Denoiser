@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Jun 25 00:28:14 2026
+# Process ID: 1136
+# Current directory: C:/Nam_3_HK2_2025_2026/Do_an_1/autoencoder/denoiser/denoiser.runs/design_1_axi_bram_ctrl_0_0_synth_1
+# Command line: vivado.exe -log design_1_axi_bram_ctrl_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_bram_ctrl_0_0.tcl
+# Log file: C:/Nam_3_HK2_2025_2026/Do_an_1/autoencoder/denoiser/denoiser.runs/design_1_axi_bram_ctrl_0_0_synth_1/design_1_axi_bram_ctrl_0_0.vds
+# Journal file: C:/Nam_3_HK2_2025_2026/Do_an_1/autoencoder/denoiser/denoiser.runs/design_1_axi_bram_ctrl_0_0_synth_1\vivado.jou
+# Running On: MSI, OS: Windows, CPU Frequency: 2296 MHz, CPU Physical cores: 12, Host memory: 7928 MB
+#-----------------------------------------------------------
+source design_1_axi_bram_ctrl_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 399.445 ; gain = 69.680
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Nam_3_HK2_2025_2026/Do_an_1/c_inter_to_hls/denoiser/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_bram_ctrl_0_0
+Command: synth_design -top design_1_axi_bram_ctrl_0_0 -part xck26-sfvc784-2LV-c -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18392
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1780.207 ; gain = 331.879
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_0_0' [c:/Nam_3_HK2_2025_2026/Do_an_1/autoencoder/denoiser/denoiser.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/synth/design_1_axi_bram_ctrl_0_0.vhd:111]
+	Parameter C_BRAM_INST_MODE bound to: EXTERNAL - type: string 
+	Parameter C_MEMORY_DEPTH bound to: 2048 - type: integer 
+	Parameter C_BRAM_ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_PROTOCOL bound to: AXI4 - type: string 
+	Parameter C_S_AXI_SUPPORTS_NARROW_BURST bound to: 1 - type: integer 
+	Parameter C_SINGLE_PORT_BRAM bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_READ_LATENCY bound to: 1 - type: integer 
+	Parameter C_RD_CMD_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_ECC_TYPE bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'axi_bram_ctrl' declared at 'c:/Nam_3_HK2_2025_2026/Do_an_1/autoencoder/denoiser/denoiser.gen/sources_1/bd/design_1/ipshared/f80b/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31357' bound to instance 'U0' of component 'axi_bram_ctrl' [c:/Nam_3_HK2_2025_2026/Do_an_1/autoencoder/denoiser/denoiser.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/synth/design_1_axi_bram_ctrl_0_0.vhd:270]
+INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl' [c:/Nam_3_HK2_2025_2026/Do_an_1/autoencoder/denoiser/denoiser.gen/sources_1/bd/design_1/ipshared/f80b/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31528]
+INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl_top' [c:/Nam_3_HK2_2025_2026/Do_an_1/autoencoder/denoiser/denoiser.gen/sources_1/bd/design_1/ipshared/f80b/hdl/axi_bram_ctrl_v4_1_rfs.vhd:30527]
+INFO: [Synth 8-638] synthesizing module 'full_axi' [c:/Nam_3_HK2_2025_2026/Do_an_1/autoencoder/denoiser/denoiser.gen/sources_1/bd/design_1/ipshared/f80b/hdl/axi_bram_ctrl_v4_1_rfs.vhd:29280]

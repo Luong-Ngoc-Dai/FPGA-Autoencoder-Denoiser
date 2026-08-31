@@ -1,0 +1,5 @@
+C++ vs Python Gold Output (accuracy of conversion)
+Average MSE: 4.54236e-005
+Average PSNR: 43.5471 dB
+Std Dev MSE: 9.57442e-006
+Std Dev PSNR: 1.07729 dB

@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# xsim v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Jun 30 22:56:31 2026
+# Process ID: 23880
+# Current directory: C:/Nam_3_HK2_2025_2026/Do_an_1/c_inter_to_hls/denoiser/solution1/sim/verilog
+# Command line: xsim.exe -source {xsim.dir/denoiser_top/xsim_script.tcl}
+# Log file: C:/Nam_3_HK2_2025_2026/Do_an_1/c_inter_to_hls/denoiser/solution1/sim/verilog/xsim.log
+# Journal file: C:/Nam_3_HK2_2025_2026/Do_an_1/c_inter_to_hls/denoiser/solution1/sim/verilog\xsim.jou
+# Running On: MSI, OS: Windows, CPU Frequency: 2296 MHz, CPU Physical cores: 12, Host memory: 7928 MB
+#-----------------------------------------------------------
+start_gui
+source xsim.dir/denoiser_top/xsim_script.tcl
+open_wave_config denoiser_top_dataflow_ana.wcfg
+source denoiser_top.tcl
+close_sim

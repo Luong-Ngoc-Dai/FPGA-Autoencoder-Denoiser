@@ -1,0 +1,23 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../denoiser_c_to_hls/main.cpp in debug mode
+   Generating csim.exe
+Start C++ inference on 5 images...
+
+========== C++ INFERENCE RESULTS ==========
+Processed images: 5
+
+--- Accuracy of conversion (C++ vs Python gold) ---
+Average MSE  : 0.0000
+Std Dev MSE  : 0.0000
+Average PSNR : 43.5471 dB
+Std Dev PSNR : 1.0773 dB
+
+--- Denoising quality (C++ vs ground truth) ---
+Average MSE  : 0.0121
+Std Dev MSE  : 0.0032
+Average PSNR : 19.3257 dB
+Std Dev PSNR : 1.2004 dB
+
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

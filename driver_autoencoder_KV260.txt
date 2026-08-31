@@ -1,0 +1,215 @@
+#include stdio.h
+#include stdlib.h
+#include stdint.h
+#include math.h
+#include fcntl.h
+#include unistd.h
+#include sysmman.h
+#include time.h
+
+#define CTRL_BASE      0xA0000000UL
+#define BRAM_IN_BASE   0xA0010000UL
+#define BRAM_OUT_BASE  0xA0012000UL
+#define MAP_SIZE       0x10000UL
+
+#define AP_CTRL    0x00
+#define INPUT_LO   0x10
+#define INPUT_HI   0x14
+#define OUTPUT_LO  0x1C
+#define OUTPUT_HI  0x20
+
+#define FIXED_SCALE  1024.0f
+#define PIXEL_COUNT  784
+
+static int   mem_fd=-1;
+static void ctrl_map,bram_in_map,bram_out_map;
+
+static inline void     W(voidb,uint32_t o,uint32_t v){(volatile uint32_t)((char)b+o)=v;}
+static inline uint32_t R(voidb,uint32_t o){return (volatile uint32_t)((char)b+o);}
+static inline void barrier(){__asm__ volatile(dsb symemory);}
+
+int denoiser_init(){
+    mem_fd=open(devmem,O_RDWRO_SYNC);
+    if(mem_fd0){perror(open devmem);return -1;}
+    ctrl_map    =mmap(NULL,MAP_SIZE,PROT_READPROT_WRITE,MAP_SHARED,mem_fd,CTRL_BASE);
+    bram_in_map =mmap(NULL,MAP_SIZE,PROT_READPROT_WRITE,MAP_SHARED,mem_fd,BRAM_IN_BASE);
+    bram_out_map=mmap(NULL,MAP_SIZE,PROT_READPROT_WRITE,MAP_SHARED,mem_fd,BRAM_OUT_BASE);
+    if(ctrl_map==MAP_FAILEDbram_in_map==MAP_FAILEDbram_out_map==MAP_FAILED)
+        {perror(mmap);return -1;}
+
+    printf([OK] Init ctrl=0x%08X in=0x%08X out=0x%08Xn,
+           CTRL_BASE,BRAM_IN_BASE,BRAM_OUT_BASE);
+
+     Xóa stale ap_done ngay từ đầu 
+    volatile uint32_t dummy = R(ctrl_map, AP_CTRL);
+    (void)dummy;
+    return 0;
+}
+
+
+  Ghi 784 pixel vào BRAM_IN
+  ap_fixed16,6 scale=1024, pack 2 pixel vào 1 word 32-bit
+  word[i2] = px[i](bit150)  px[i+1](bit3116)
+ 
+void load_image(const float px){
+    for(int i=0;iPIXEL_COUNT;i+=2){
+        uint16_t lo=(uint16_t)(int16_t)(px[i  ]FIXED_SCALE);
+        uint16_t hi=(uint16_t)(int16_t)(px[i+1]FIXED_SCALE);
+        W(bram_in_map,(i2)4, (uint32_t)lo((uint32_t)hi16));
+    }
+    barrier();  đảm bảo BRAM được ghi trước khi IP đọc 
+}
+
+
+  Chuỗi start đúng cho HLS AP control
+  1. Xóa stale ap_done bằng cách đọc AP_CTRL
+  2. Ghi pointer (mỗi lần để chắc chắn)
+  3. Đợi ip_idle=1 (IP sẵn sàng)
+  4. Ghi ap_start=1
+  5. Đợi ap_idle=0 (IP đã nhận lệnh start)
+  6. Đợi ap_done=1 (IP xử lý xong)
+ 
+long run_denoiser(){
+     Ghi pointer mỗi lần (tránh bị reset) 
+    W(ctrl_map,INPUT_LO, (uint32_t)BRAM_IN_BASE);
+    W(ctrl_map,INPUT_HI, 0);
+    W(ctrl_map,OUTPUT_LO,(uint32_t)BRAM_OUT_BASE);
+    W(ctrl_map,OUTPUT_HI,0);
+
+     BƯỚC 1 Xóa stale ap_done 
+    volatile uint32_t ap = R(ctrl_map, AP_CTRL);
+    (void)ap;
+
+     BƯỚC 2 Đợi ap_idle=1 (IP phải rảnh mới start) 
+    int n=2000000;
+    while(!((R(ctrl_map,AP_CTRL)2)&1) && --n0);
+    if(n=0){fprintf(stderr,[ERR] IP không idle!n);return -1;}
+
+     BƯỚC 3 Start IP 
+    struct timespec t0,t1;
+    clock_gettime(CLOCK_MONOTONIC,&t0);
+    W(ctrl_map,AP_CTRL,0x01);  ap_start=1 
+
+     BƯỚC 4 Đợi ap_idle=0 (xác nhận IP đã nhận start) 
+    n=2000000;
+    while(((R(ctrl_map,AP_CTRL)2)&1) && --n0);
+    if(n=0){
+         Nếu vẫn idle sau khi start → IP xử lý quá nhanh, đã done 
+        clock_gettime(CLOCK_MONOTONIC,&t1);
+        goto done;
+    }
+
+     BƯỚC 5 Đợi ap_done=1 (bit1) HOẶC ap_idle=1 trở lại (bit2) 
+    n=100000000;
+    while(!(R(ctrl_map,AP_CTRL)&0x06) && --n0);
+    if(n=0){fprintf(stderr,[ERR] Timeout!n);return -1;}
+
+done
+    clock_gettime(CLOCK_MONOTONIC,&t1);
+    barrier();  đảm bảo đọc BRAM_OUT sau khi IP ghi xong 
+
+     Đọc thêm 1 lần để clear ap_done cho lần sau 
+    volatile uint32_t final = R(ctrl_map,AP_CTRL);
+    (void)final;
+
+    return (t1.tv_sec-t0.tv_sec)1000000L+(t1.tv_nsec-t0.tv_nsec)1000L;
+}
+
+
+  Đọc output từ BRAM_OUT
+  IP ghi với stride=2 2 pixelword
+ 
+void read_output(float out){
+    for(int i=0;iPIXEL_COUNT;i+=2){
+        uint32_t w=R(bram_out_map,(i2)4);
+        out[i  ]=(float)(int16_t)(w&0xFFFF)FIXED_SCALE;
+        out[i+1]=(float)(int16_t)(w16)  FIXED_SCALE;
+        if(out[i  ]0)out[i  ]=0; if(out[i  ]1)out[i  ]=1;
+        if(out[i+1]0)out[i+1]=0; if(out[i+1]1)out[i+1]=1;
+    }
+}
+
+int load_txt(const charpath,floatbuf,int n){
+    FILEf=fopen(path,r); if(!f)return -1;
+    for(int i=0;in;i++) if(fscanf(f,%f,&buf[i])!=1){fclose(f);return -1;}
+    fclose(f); return 0;
+}
+
+double psnr(const floata,const floatb,int n){
+    double mse=0;
+    for(int i=0;in;i++){double d=a[i]-b[i];mse+=dd;}
+    mse=n;
+    return mse1e-12100.010.0log10(1.0mse);
+}
+
+int main(int argc,charargv[]){
+    if(argc3){
+        printf(Usage sudo %s data_dir num_imagesn,argv[0]);
+        return 1;
+    }
+    const chardir=argv[1]; int N=atoi(argv[2]);
+    if(denoiser_init()0) return 1;
+
+    float in =malloc(PIXEL_COUNTsizeof(float));
+    float gt =malloc(PIXEL_COUNTsizeof(float));
+    float gold=malloc(PIXEL_COUNTsizeof(float));
+    float out =malloc(PIXEL_COUNTsizeof(float));
+
+    double sum_pg=0,sum_pt=0;
+    double min_pt=1e9,max_pt=-1e9;
+    long total_us=0; int ok=0,skip=0;
+    char path[512];
+
+    printf(n[START] Testing %d images...n,N);
+
+    for(int idx=0;idxN;idx++){
+        snprintf(path,sizeof(path),%stest_input_%d.txt,dir,idx);
+        if(load_txt(path,in,PIXEL_COUNT)0){skip++;continue;}
+        snprintf(path,sizeof(path),%stest_ground_truth_%d.txt,dir,idx);
+        if(load_txt(path,gt,PIXEL_COUNT)0){skip++;continue;}
+        snprintf(path,sizeof(path),%sgold_output_%d.txt,dir,idx);
+        if(load_txt(path,gold,PIXEL_COUNT)0){skip++;continue;}
+
+        load_image(in);
+        long us=run_denoiser();
+        if(us0){skip++;continue;}
+        read_output(out);
+        total_us+=us; ok++;
+
+        double pg=psnr(out,gold,PIXEL_COUNT);
+        double pt=psnr(out,gt,PIXEL_COUNT);
+        sum_pg+=pg; sum_pt+=pt;
+        if(ptmin_pt)min_pt=pt;
+        if(ptmax_pt)max_pt=pt;
+
+        if((idx+1)%20==0idx==N-1)
+            printf(  [%3d%d] vs gold %5.2f dB  vs GT %5.2f dB  %ldusn,
+                   idx+1,N,pg,pt,us);
+    }
+
+    printf(n══════════════════════════════════════════n);
+    printf(  KẾT QUẢ FPGA KV260 — %d ảnhn,ok);
+    printf(══════════════════════════════════════════n);
+    printf(  FPGA vs Python gold %.4f dBn,sum_pgok);
+    printf(  FPGA vs Ground Truth %.4f dBn,sum_ptok);
+    printf(  MinMax PSNR vs GT %.2f  %.2f dBn,min_pt,max_pt);
+    printf(  Avg latency %.3f ms  %.1f FPSn,
+           (double)total_usok1000.0,1e6((double)total_usok));
+    printf(  Skipped %dn,skip);
+
+    FILEf=fopen(fpga_final_results.txt,w);
+    if(f){
+        fprintf(f,FPGA KV260 Denoiser — Finaln);
+        fprintf(f,Images %d  Skipped %dn,ok,skip);
+        fprintf(f,PSNR vs gold %.4f dBn,sum_pgok);
+        fprintf(f,PSNR vs GT   %.4f dBn,sum_ptok);
+        fprintf(f,MinMax %.2f  %.2f dBn,min_pt,max_pt);
+        fprintf(f,Avg latency %.3f msn,(double)total_usok1000.0);
+        fclose(f);
+        printf(  [OK] fpga_final_results.txtn);
+    }
+    munmap(ctrl_map,MAP_SIZE);munmap(bram_in_map,MAP_SIZE);
+    munmap(bram_out_map,MAP_SIZE);close(mem_fd);
+    free(in);free(gt);free(gold);free(out);
+    return 0;
+}

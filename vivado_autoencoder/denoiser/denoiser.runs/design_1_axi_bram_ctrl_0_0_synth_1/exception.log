@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\Nam_3_HK2_2025_2026\Do_an_1\autoencoder\denoiser\denoiser.runs\design_1_axi_bram_ctrl_0_0_synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied

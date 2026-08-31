@@ -1,0 +1,346 @@
+#-----------------------------------------------------------
+# xsim v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Jun 30 22:56:31 2026
+# Process ID: 23880
+# Current directory: C:/Nam_3_HK2_2025_2026/Do_an_1/c_inter_to_hls/denoiser/solution1/sim/verilog
+# Command line: xsim.exe -source {xsim.dir/denoiser_top/xsim_script.tcl}
+# Log file: C:/Nam_3_HK2_2025_2026/Do_an_1/c_inter_to_hls/denoiser/solution1/sim/verilog/xsim.log
+# Journal file: C:/Nam_3_HK2_2025_2026/Do_an_1/c_inter_to_hls/denoiser/solution1/sim/verilog\xsim.jou
+# Running On: MSI, OS: Windows, CPU Frequency: 2296 MHz, CPU Physical cores: 12, Host memory: 7928 MB
+#-----------------------------------------------------------
+start_gui
+source xsim.dir/denoiser_top/xsim_script.tcl
+# set_param project.enableReportConfiguration 0
+# load_feature core
+# current_fileset
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.0/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.1/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+current_fileset: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1040.133 ; gain = 248.523
+# xsim {denoiser_top} -view {{denoiser_top_dataflow_ana.wcfg}} -tclbatch {denoiser_top.tcl} -protoinst {denoiser_top.protoinst}
+INFO: [Wavedata 42-565] Reading protoinst file denoiser_top.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_denoiser_top_top/AESL_inst_denoiser_top//AESL_inst_denoiser_top_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_denoiser_top_Pipeline_VITIS_LOOP_18_1_fu_123/grp_denoiser_top_Pipeline_VITIS_LOOP_18_1_fu_123_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_denoiser_top_Pipeline_VITIS_LOOP_25_2_fu_152/grp_denoiser_top_Pipeline_VITIS_LOOP_25_2_fu_152_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_VITIS_LOOP_47_3_fu_475/grp_inference_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_VITIS_LOOP_47_3_fu_475_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_VITIS_LOOP_97_1_VITIS_LOOP_98_2_VITIS_LOOP_99_3_fu_498/grp_inference_Pipeline_VITIS_LOOP_97_1_VITIS_LOOP_98_2_VITIS_LOOP_99_3_fu_498_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kh_2_loop_kw_2_loop_ic_2_fu_504/grp_inference_Pipeline_loop_kh_2_loop_kw_2_loop_ic_2_fu_504_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kh_3_loop_kw_3_loop_ic_3_fu_521/grp_inference_Pipeline_loop_kh_3_loop_kw_3_loop_ic_3_fu_521_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kh_out_loop_kw_out_loop_ic_out_fu_537/grp_inference_Pipeline_loop_kh_out_loop_kw_out_loop_ic_out_fu_537_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_Pipeline_loop_kw_1_fu_481/grp_inference_Pipeline_loop_kw_1_fu_481_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_denoiser_top_top/AESL_inst_denoiser_top/grp_inference_fu_131/grp_inference_fu_131_activity
+Time resolution is 1 ps
+open_wave_config denoiser_top_dataflow_ana.wcfg
+source denoiser_top.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set cinoutgroup [add_wave_group "C InOuts" -into $designtopgroup]
+## set input_r__output_r__return_group [add_wave_group input_r__output_r__return(axi_slave) -into $cinoutgroup]
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/interrupt -into $input_r__output_r__return_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/s_axi_control_BRESP -into $input_r__output_r__return_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/s_axi_control_BREADY -into $input_r__output_r__return_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/s_axi_control_BVALID -into $input_r__output_r__return_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/s_axi_control_RRESP -into $input_r__output_r__return_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/s_axi_control_RDATA -into $input_r__output_r__return_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/s_axi_control_RREADY -into $input_r__output_r__return_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/s_axi_control_RVALID -into $input_r__output_r__return_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/s_axi_control_ARREADY -into $input_r__output_r__return_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/s_axi_control_ARVALID -into $input_r__output_r__return_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/s_axi_control_ARADDR -into $input_r__output_r__return_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/s_axi_control_WSTRB -into $input_r__output_r__return_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/s_axi_control_WDATA -into $input_r__output_r__return_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/s_axi_control_WREADY -into $input_r__output_r__return_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/s_axi_control_WVALID -into $input_r__output_r__return_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/s_axi_control_AWREADY -into $input_r__output_r__return_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/s_axi_control_AWVALID -into $input_r__output_r__return_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/s_axi_control_AWADDR -into $input_r__output_r__return_group -radix hex
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set output_r_group [add_wave_group output_r(axi_master) -into $coutputgroup]
+## set rdata_group [add_wave_group "Read Channel" -into $output_r_group]
+## set wdata_group [add_wave_group "Write Channel" -into $output_r_group]
+## set ctrl_group [add_wave_group "Handshakes" -into $output_r_group]
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_BUSER -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_BID -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_BRESP -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_BREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_BVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_RRESP -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_RUSER -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_RID -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_RLAST -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_RDATA -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_RREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_RVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_ARUSER -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_ARREGION -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_ARQOS -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_ARPROT -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_ARCACHE -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_ARLOCK -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_ARBURST -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_ARSIZE -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_ARLEN -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_ARID -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_ARADDR -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_ARREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_ARVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_WUSER -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_WID -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_WLAST -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_WSTRB -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_WDATA -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_WREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_WVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_AWUSER -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_AWREGION -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_AWQOS -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_AWPROT -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_AWCACHE -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_AWLOCK -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_AWBURST -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_AWSIZE -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_AWLEN -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_AWID -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_AWADDR -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_AWREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem1_AWVALID -into $ctrl_group -color #ffff00 -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set input_r_group [add_wave_group input_r(axi_master) -into $cinputgroup]
+## set rdata_group [add_wave_group "Read Channel" -into $input_r_group]
+## set wdata_group [add_wave_group "Write Channel" -into $input_r_group]
+## set ctrl_group [add_wave_group "Handshakes" -into $input_r_group]
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_BUSER -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_BID -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_BRESP -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_BREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_BVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_RRESP -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_RUSER -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_RID -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_RLAST -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_RDATA -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_RREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_RVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_ARUSER -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_ARREGION -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_ARQOS -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_ARPROT -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_ARCACHE -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_ARLOCK -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_ARBURST -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_ARSIZE -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_ARLEN -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_ARID -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_ARADDR -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_ARREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_ARVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_WUSER -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_WID -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_WLAST -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_WSTRB -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_WDATA -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_WREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_WVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_AWUSER -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_AWREGION -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_AWQOS -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_AWPROT -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_AWCACHE -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_AWLOCK -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_AWBURST -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_AWSIZE -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_AWLEN -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_AWID -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_AWADDR -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_AWREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/m_axi_gmem0_AWVALID -into $ctrl_group -color #ffff00 -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake(internal)" -into $designtopgroup]
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/ap_done -into $blocksiggroup
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/ap_idle -into $blocksiggroup
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/ap_ready -into $blocksiggroup
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/ap_start -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/ap_rst_n -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_denoiser_top_top/AESL_inst_denoiser_top/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_denoiser_top_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_denoiser_top_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_denoiser_top_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_denoiser_top_top/LENGTH_gmem0 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_denoiser_top_top/LENGTH_gmem1 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_denoiser_top_top/LENGTH_input_r -into $tb_portdepth_group -radix hex
+## add_wave /apatb_denoiser_top_top/LENGTH_output_r -into $tb_portdepth_group -radix hex
+## set tbcinoutgroup [add_wave_group "C InOuts" -into $testbenchgroup]
+## set tb_input_r__output_r__return_group [add_wave_group input_r__output_r__return(axi_slave) -into $tbcinoutgroup]
+## add_wave /apatb_denoiser_top_top/control_INTERRUPT -into $tb_input_r__output_r__return_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/control_BRESP -into $tb_input_r__output_r__return_group -radix hex
+## add_wave /apatb_denoiser_top_top/control_BREADY -into $tb_input_r__output_r__return_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/control_BVALID -into $tb_input_r__output_r__return_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/control_RRESP -into $tb_input_r__output_r__return_group -radix hex
+## add_wave /apatb_denoiser_top_top/control_RDATA -into $tb_input_r__output_r__return_group -radix hex
+## add_wave /apatb_denoiser_top_top/control_RREADY -into $tb_input_r__output_r__return_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/control_RVALID -into $tb_input_r__output_r__return_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/control_ARREADY -into $tb_input_r__output_r__return_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/control_ARVALID -into $tb_input_r__output_r__return_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/control_ARADDR -into $tb_input_r__output_r__return_group -radix hex
+## add_wave /apatb_denoiser_top_top/control_WSTRB -into $tb_input_r__output_r__return_group -radix hex
+## add_wave /apatb_denoiser_top_top/control_WDATA -into $tb_input_r__output_r__return_group -radix hex
+## add_wave /apatb_denoiser_top_top/control_WREADY -into $tb_input_r__output_r__return_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/control_WVALID -into $tb_input_r__output_r__return_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/control_AWREADY -into $tb_input_r__output_r__return_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/control_AWVALID -into $tb_input_r__output_r__return_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/control_AWADDR -into $tb_input_r__output_r__return_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_output_r_group [add_wave_group output_r(axi_master) -into $tbcoutputgroup]
+## set rdata_group [add_wave_group "Read Channel" -into $tb_output_r_group]
+## set wdata_group [add_wave_group "Write Channel" -into $tb_output_r_group]
+## set ctrl_group [add_wave_group "Handshakes" -into $tb_output_r_group]
+## add_wave /apatb_denoiser_top_top/gmem1_BUSER -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_BID -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_BRESP -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_BREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_BVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_RRESP -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_RUSER -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_RID -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_RLAST -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_RDATA -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_RREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_RVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_ARUSER -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_ARREGION -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_ARQOS -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_ARPROT -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_ARCACHE -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_ARLOCK -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_ARBURST -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_ARSIZE -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_ARLEN -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_ARID -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_ARADDR -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_ARREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_ARVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_WUSER -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_WID -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_WLAST -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_WSTRB -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_WDATA -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_WREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_WVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_AWUSER -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_AWREGION -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_AWQOS -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_AWPROT -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_AWCACHE -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_AWLOCK -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_AWBURST -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_AWSIZE -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_AWLEN -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_AWID -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_AWADDR -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_AWREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/gmem1_AWVALID -into $ctrl_group -color #ffff00 -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_input_r_group [add_wave_group input_r(axi_master) -into $tbcinputgroup]
+## set rdata_group [add_wave_group "Read Channel" -into $tb_input_r_group]
+## set wdata_group [add_wave_group "Write Channel" -into $tb_input_r_group]
+## set ctrl_group [add_wave_group "Handshakes" -into $tb_input_r_group]
+## add_wave /apatb_denoiser_top_top/gmem0_BUSER -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_BID -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_BRESP -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_BREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_BVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_RRESP -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_RUSER -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_RID -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_RLAST -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_RDATA -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_RREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_RVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_ARUSER -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_ARREGION -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_ARQOS -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_ARPROT -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_ARCACHE -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_ARLOCK -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_ARBURST -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_ARSIZE -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_ARLEN -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_ARID -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_ARADDR -into $rdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_ARREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_ARVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_WUSER -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_WID -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_WLAST -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_WSTRB -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_WDATA -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_WREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_WVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_AWUSER -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_AWREGION -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_AWQOS -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_AWPROT -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_AWCACHE -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_AWLOCK -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_AWBURST -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_AWSIZE -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_AWLEN -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_AWID -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_AWADDR -into $wdata_group -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_AWREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_denoiser_top_top/gmem0_AWVALID -into $ctrl_group -color #ffff00 -radix hex
+## save_wave_config denoiser_top.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 5 [0.00%] @ "125000"
+// RTL Simulation : 1 / 5 [0.00%] @ "5010825000"
+// RTL Simulation : 2 / 5 [0.00%] @ "10021375000"
+// RTL Simulation : 3 / 5 [0.00%] @ "15031925000"
+// RTL Simulation : 4 / 5 [0.00%] @ "20042475000"
+// RTL Simulation : 5 / 5 [100.00%] @ "25053025000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 25053085 ns : File "C:/Nam_3_HK2_2025_2026/Do_an_1/c_inter_to_hls/denoiser/solution1/sim/verilog/denoiser_top.autotb.v" Line 576
+run: Time (s): cpu = 00:19:43 ; elapsed = 00:19:34 . Memory (MB): peak = 1188.246 ; gain = 36.113
+xsim: Time (s): cpu = 00:20:00 ; elapsed = 00:19:52 . Memory (MB): peak = 1188.246 ; gain = 148.113
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 56624 KB (Peak: 56624 KB), Simulation CPU Usage: 205186 ms
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting xsim at Tue Jun 30 23:17:15 2026...

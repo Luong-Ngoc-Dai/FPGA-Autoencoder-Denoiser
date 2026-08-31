@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Jun 25 13:59:27 2026
+# Process ID: 13172
+# Current directory: C:/Nam_3_HK2_2025_2026/Do_an_1/autoencoder/denoiser/denoiser.runs/design_1_auto_ds_2_synth_1
+# Command line: vivado.exe -log design_1_auto_ds_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_auto_ds_2.tcl
+# Log file: C:/Nam_3_HK2_2025_2026/Do_an_1/autoencoder/denoiser/denoiser.runs/design_1_auto_ds_2_synth_1/design_1_auto_ds_2.vds
+# Journal file: C:/Nam_3_HK2_2025_2026/Do_an_1/autoencoder/denoiser/denoiser.runs/design_1_auto_ds_2_synth_1\vivado.jou
+# Running On: MSI, OS: Windows, CPU Frequency: 2296 MHz, CPU Physical cores: 12, Host memory: 7928 MB
+#-----------------------------------------------------------
+source design_1_auto_ds_2.tcl -notrace
